@@ -1,14 +1,17 @@
-# 🍎 Data Engineering & BI para Mercado Frutihortícola – Agro Justo Mendoza (Agro-Gap)
+# 🍎🥦🥕 Data Engineering & BI para Mercado Frutihortícola 🍅🥔🧅 – Agro Justo Mendoza (Agro-Gap)
 
 ![Data Engineering](https://img.shields.io/badge/Data%20Engineering-Pipeline-blue)
-![Data Analysis](https://img.shields.io/badge/Data%20Analysis-LATAM-green)
-![PowerBI](https://img.shields.io/badge/Dashboard-PowerBI-yellow)
+![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Mendoza-green)
+![Python](https://img.shields.io/badge/Language-Python-blue)
+![Docker](https://img.shields.io/badge/Container-Docker-cyan)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
 ![Airflow](https://img.shields.io/badge/Orchestration-Airflow-red)
-
+![Make](https://img.shields.io/badge/Automation-Make-purple)
+![Excel](https://img.shields.io/badge/Spreadsheet-Excel-brightgreen)
+![PowerBI](https://img.shields.io/badge/Dashboard-PowerBI-yellow)
 ---
 
-# 📊 Vigilancia económica y análisis estratégico de precios
+# 📊 Monitoreo económico y análisis estratégico de precios
 
 El proyecto **Agro Justo Mendoza** ofrece una solución integral de ingeniería, análisis de datos y negocio aplicada a la economía real, abordando una problemática estructural que no había sido resuelta hasta el momento en la provincia. 
 
@@ -68,16 +71,18 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 ---
 
 # 🧰 Tecnologías Utilizadas
-
+ 
 <p align="left">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" title="Python"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40" title="Pandas"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" title="PostgreSQL"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" title="Docker"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="40" title="Airflow"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40" title="Airflow"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" title="Power BI"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" width="40" title="Excel"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="40" title="Telegram"/>
+<img src="https://cdn.worldvectorlogo.com/logos/make-hq.svg" width="40" title="Make"/>
 </p>
-
 *   **Lenguajes & Procesamiento:** Python, Pandas.
 *   **Orquestación & Infraestructura:** Apache Airflow, Docker.
 *   **Base de Datos & Modelado:** PostgreSQL, SQL.
@@ -140,3 +145,4 @@ Este sistema de inteligencia empodera a distintos actores del mercado:
   <a href="https://www.linkedin.com/in/tu-enlace-a-linkedin/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/>
   </a>
+
