@@ -1,0 +1,167 @@
+services:
+  # --- INICIALIZADOR DE PERMISOS ABSOLUTOS ---
+  airflow-init-permissions: # <--- NUEVO SERVICIO
+    image: alpine:latest
+    user: "0:0"
+    volumes:
+      - .:/opt/airflow_raiz
+    command: >
+      sh -c "chmod -R 777 /opt/airflow_raiz"
+      
+  # Base de datos para los metadatos de Airflow
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+
+  # Inicializador de la base de datos de Airflow
+  airflow-init:
+    build: .
+    command: version
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:password@postgres/airflow
+      - AIRFLOW__CORE__AUTH_MANAGER=airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+      - _AIRFLOW_DB_UPGRADE=true
+      - _AIRFLOW_WWW_USER_CREATE=true
+      - _AIRFLOW_WWW_USER_USERNAME=usuario
+      - _AIRFLOW_WWW_USER_PASSWORD=contraseña
+    user: "0:0"
+    volumes:
+      - ./dags:/opt/airflow/dags
+
+  # Interfaz Web de Airflow (Webserver)
+  airflow-webserver:
+    build: .
+    command: api-server
+    ports:
+      - "8080:8080"
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:password@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY='clave_key'
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      - AIRFLOW__CORE__AUTH_MANAGER=airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+      - AIRFLOW__CORE__EXECUTION_API_SERVER_URL=http://airflow-webserver:8080/execution
+      - AIRFLOW__CORE__INTERNAL_API_URL=http://airflow-webserver:8080
+      - AIRFLOW__API_AUTH__JWT_SECRET=Api_airflow
+
+      # 🟢 CONFIGURACIÓN SMTP PARA ENVIAR CORREOS 🟢
+      - AIRFLOW__SMTP__SMTP_HOST=smtp.gmail.com
+      - AIRFLOW__SMTP__SMTP_STARTTLS=true
+      - AIRFLOW__SMTP__SMTP_SSL=false
+      - AIRFLOW__SMTP__SMTP_PORT=587
+      - AIRFLOW__SMTP__SMTP_USER=correo_electronico
+      - AIRFLOW__SMTP__SMTP_PASSWORD=password
+      - AIRFLOW__SMTP__SMTP_MAIL_FROM=correo_electronico
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Planificador de Airflow (Scheduler)
+  airflow-scheduler:
+    build: .
+    command: scheduler
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:password@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY='clave_key'
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      - AIRFLOW__CORE__AUTH_MANAGER=airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+      - AIRFLOW__CORE__EXECUTION_API_SERVER_URL=http://airflow-webserver:8080/execution
+      - AIRFLOW__CORE__INTERNAL_API_URL=http://airflow-webserver:8080
+      - AIRFLOW__API_AUTH__JWT_SECRET=api_airflow
+
+      # 🟢 CONFIGURACIÓN SMTP PARA ENVIAR CORREOS 🟢
+      - AIRFLOW__SMTP__SMTP_HOST=smtp.gmail.com
+      - AIRFLOW__SMTP__SMTP_STARTTLS=true
+      - AIRFLOW__SMTP__SMTP_SSL=false
+      - AIRFLOW__SMTP__SMTP_PORT=587
+      - AIRFLOW__SMTP__SMTP_USER=correo_electronico
+      - AIRFLOW__SMTP__SMTP_PASSWORD=contraseña
+      - AIRFLOW__SMTP__SMTP_MAIL_FROM=correo_electronico
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+        
+  # Procesador de DAGs (El nuevo lector obligatorio de Airflow 3)
+  airflow-dag-processor:
+    build: .
+    command: dag-processor
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:password@postgres/airflow
+      - AIRFLOW__CORE__FERNET_KEY='clave_key'
+      - AIRFLOW__CORE__LOAD_EXAMPLES=false
+      - AIRFLOW__CORE__AUTH_MANAGER=airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager
+      - AIRFLOW__CORE__EXECUTION_API_SERVER_URL=http://airflow-webserver:8080/execution
+      - AIRFLOW__CORE__INTERNAL_API_URL=http://airflow-webserver:8080
+      - AIRFLOW__API_AUTH__JWT_SECRET=api_airflow
+
+      # 🟢 CONFIGURACIÓN SMTP PARA ENVIAR CORREOS 🟢
+      - AIRFLOW__SMTP__SMTP_HOST=smtp.gmail.com
+      - AIRFLOW__SMTP__SMTP_STARTTLS=true
+      - AIRFLOW__SMTP__SMTP_SSL=false
+      - AIRFLOW__SMTP__SMTP_PORT=587
+      - AIRFLOW__SMTP__SMTP_USER=correo_electronico
+      - AIRFLOW__SMTP__SMTP_PASSWORD=contraseña
+      - AIRFLOW__SMTP__SMTP_MAIL_FROM=correo_electronico
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Spark Master (Oficial de Apache)
+  spark-master:
+    image: apache/spark:4.0.0
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "7077:7077"
+      - "8081:8080"
+      - "4040:4040"
+    volumes:
+      - ./data:/opt/airflow/data
+      - ./dags:/opt/airflow/dags
+
+  # Spark Worker (Oficial de Apache)
+  spark-worker:
+    image: apache/spark:4.0.0
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    ports:
+      - "8082:8081"
+    volumes:
+      - ./data:/opt/airflow/data
+      - ./dags:/opt/airflow/dags
+    depends_on:
+      - spark-master
+
+volumes:
+  postgres_data:
