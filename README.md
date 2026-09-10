@@ -79,19 +79,20 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" title="Docker"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg" width="40" title="Airflow"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" title="Power BI"/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" width="40" title="Excel"/>
+<img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" width="40" title="Excel"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="40" title="Telegram"/>
-<img src="https://cdn.worldvectorlogo.com/logos/make-hq.svg" width="40" title="Make"/>
+<img src="https://icon.icepanel.io/Technology/svg/Make.svg" width="40" title="Make"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" width="40" title="Google Gemini"/>
 </p>
+
 *   **Lenguajes & Procesamiento:** Python, Pandas.
 *   **Orquestación & Infraestructura:** Apache Airflow, Docker.
 *   **Base de Datos & Modelado:** PostgreSQL, SQL.
 *   **Automatización & Alertas:** Make.com, Telegram Bot API, Gmail.
 *   **Inteligencia Artificial:** Google Gemini.
 *   **Visualización & BI:** Power BI, DAX, Excel.
-
+ 
 ---
-
 # 🗄 Modelo de Datos
 
 Se diseñó un modelo analítico relacional optimizado para consultas eficientes y consumo en herramientas de BI, estructurado en **5 tablas principales**:
@@ -145,4 +146,5 @@ Este sistema de inteligencia empodera a distintos actores del mercado:
   <a href="https://www.linkedin.com/in/tu-enlace-a-linkedin/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/>
   </a>
+
 
