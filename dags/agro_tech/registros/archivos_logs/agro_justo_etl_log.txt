@@ -1,0 +1,146 @@
+2026-08-05 23:48:40 // INICIO: Comenzando proceso de extracción de datos (PDF, Divisas y Supermercados).
+2026-08-05 23:48:41 // ADVERTENCIA: No se encontró PDF en /opt/airflow/data/agro_justo_mendoza_archivos. Se aplicó plantilla nula.
+2026-08-05 23:48:41 // EXITO: Cotización Dólar Blue obtenida ($1540).
+2026-08-05 23:48:41 // SCRAPING: Iniciando escaneo de precios en supermercados para 90 productos...
+2026-08-05 23:53:33 // SCRAPING: Búsqueda de precios en supermercados finalizada.
+2026-08-05 23:53:33 // FIN: Archivos Excel exportados con éxito. Etapa de Extracción completada.
+
+2026-08-05 23:53:35 // INICIO: Arranca la fase de transformación de datos.
+2026-08-05 23:53:35 // INFO: Archivos Excel de extracción cargados correctamente.
+2026-08-05 23:53:35 // INFO: Dimensiones (Sucursales, Productos) y Cotizaciones procesadas.
+2026-08-05 23:53:35 // INFO: Construyendo tabla de hechos 'fact_monitoreo_precios'...
+2026-08-05 23:53:35 // INFO: Datos de supermercados y feria unidos con éxito en la tabla de hechos.
+2026-08-05 23:53:35 // INFO: Analizando brechas de precios para alertas...
+2026-08-05 23:53:35 // INFO: Ningún producto superó el umbral de alerta de brecha.
+2026-08-05 23:53:35 // INFO: Generando archivos Excel finales para la carga en Base de Datos...
+2026-08-05 23:53:35 // FIN: Transformación y exportación completadas exitosamente.
+
+2026-08-05 23:53:36 // INICIO: Arranca la fase de carga de datos en PostgreSQL.
+2026-08-05 23:53:36 // INFO: Archivos Excel finales listos para ser cargados en la BD.
+2026-08-05 23:53:36 // INFO: Conexión exitosa a la base de datos PostgreSQL.
+2026-08-05 23:53:36 // INFO: Dimensiones (sucursales, productos) actualizadas correctamente vía UPSERT.
+2026-08-05 23:53:36 // INFO: Tablas de hechos (cotizaciones, monitoreo) agregadas correctamente vía APPEND.
+2026-08-05 23:53:36 // FIN: Carga de datos exitosa. Pipeline ETL finalizado.
+
+
+2026-08-12 12:30:02 // INICIO: Comenzando proceso de extracción de datos (PDF, Divisas y Supermercados).
+2026-08-12 12:30:02 // ADVERTENCIA: No se encontró PDF en /opt/airflow/data/agro_justo_mendoza_archivos. Se aplicó plantilla nula.
+2026-08-12 12:30:02 // EXITO: Cotización Dólar Blue obtenida ($1535).
+2026-08-12 12:30:02 // SCRAPING: Iniciando escaneo de precios en supermercados para 90 productos...
+2026-08-12 12:34:56 // SCRAPING: Búsqueda de precios en supermercados finalizada.
+2026-08-12 12:34:56 // FIN: Archivos Excel exportados con éxito. Etapa de Extracción completada.
+
+2026-08-12 12:34:57 // INICIO: Arranca la fase de transformación de datos.
+2026-08-12 12:34:57 // INFO: Archivos Excel de extracción cargados correctamente.
+2026-08-12 12:34:57 // INFO: Dimensiones (Sucursales, Productos) y Cotizaciones procesadas.
+2026-08-12 12:34:57 // INFO: Construyendo tabla de hechos 'fact_monitoreo_precios'...
+2026-08-12 12:34:57 // INFO: Datos de supermercados y feria unidos con éxito en la tabla de hechos.
+2026-08-12 12:34:57 // INFO: Analizando brechas de precios para alertas...
+2026-08-12 12:34:57 // INFO: Ningún producto superó el umbral de alerta de brecha.
+2026-08-12 12:34:57 // INFO: Generando archivos Excel finales para la carga en Base de Datos...
+2026-08-12 12:34:57 // FIN: Transformación y exportación completadas exitosamente.
+
+2026-08-12 12:34:58 // INICIO: Arranca la fase de carga de datos en PostgreSQL.
+2026-08-12 12:34:58 // INFO: Archivos Excel finales listos para ser cargados en la BD.
+2026-08-12 12:34:58 // INFO: Conexión exitosa a la base de datos PostgreSQL.
+2026-08-12 12:34:58 // INFO: Dimensiones (sucursales, productos) actualizadas correctamente vía UPSERT.
+2026-08-12 12:34:58 // INFO: Tablas de hechos (cotizaciones, monitoreo) agregadas correctamente vía APPEND.
+2026-08-12 12:34:58 // FIN: Carga de datos exitosa. Pipeline ETL finalizado.
+
+2026-08-19 13:41:18 // INICIO: Comenzando proceso de extracción de datos (PDF, Divisas y Supermercados).
+2026-08-19 13:41:18 // ADVERTENCIA: No se encontró PDF en /opt/airflow/data/agro_justo_mendoza_archivos. Se aplicó plantilla nula.
+2026-08-19 13:41:18 // EXITO: Cotización Dólar Blue obtenida ($1565).
+2026-08-19 13:41:18 // SCRAPING: Iniciando escaneo de precios en supermercados para 90 productos...
+2026-08-19 13:46:18 // SCRAPING: Búsqueda de precios en supermercados finalizada.
+2026-08-19 13:46:18 // FIN: Archivos Excel exportados con éxito. Etapa de Extracción completada.
+
+2026-08-19 13:46:20 // INICIO: Arranca la fase de transformación de datos.
+2026-08-19 13:46:20 // INFO: Archivos Excel de extracción cargados correctamente.
+2026-08-19 13:46:20 // INFO: Dimensiones (Sucursales, Productos) y Cotizaciones procesadas.
+2026-08-19 13:46:20 // INFO: Construyendo tabla de hechos 'fact_monitoreo_precios'...
+2026-08-19 13:46:20 // INFO: Datos de supermercados y feria unidos con éxito en la tabla de hechos.
+2026-08-19 13:46:20 // INFO: Analizando brechas de precios para alertas...
+2026-08-19 13:46:20 // INFO: Ningún producto superó el umbral de alerta de brecha.
+2026-08-19 13:46:20 // INFO: Generando archivos Excel finales para la carga en Base de Datos...
+2026-08-19 13:46:20 // FIN: Transformación y exportación completadas exitosamente.
+
+2026-08-19 13:46:21 // INICIO: Arranca la fase de carga de datos en PostgreSQL.
+2026-08-19 13:46:21 // INFO: Archivos Excel finales listos para ser cargados en la BD.
+2026-08-19 13:46:21 // INFO: Conexión exitosa a la base de datos PostgreSQL.
+2026-08-19 13:46:21 // INFO: Dimensiones (sucursales, productos) actualizadas correctamente vía UPSERT.
+2026-08-19 13:46:21 // INFO: Tablas de hechos (cotizaciones, monitoreo) agregadas correctamente vía APPEND.
+2026-08-19 13:46:21 // FIN: Carga de datos exitosa. Pipeline ETL finalizado.
+
+2026-08-26 12:52:28 // INICIO: Comenzando proceso de extracción de datos (PDF, Divisas y Supermercados).
+2026-08-26 12:52:28 // ADVERTENCIA: No se encontró PDF en /opt/airflow/data/agro_justo_mendoza_archivos. Se aplicó plantilla nula.
+2026-08-26 12:52:28 // EXITO: Cotización Dólar Blue obtenida ($1555).
+2026-08-26 12:52:28 // SCRAPING: Iniciando escaneo de precios en supermercados para 90 productos...
+2026-08-26 12:57:19 // SCRAPING: Búsqueda de precios en supermercados finalizada.
+2026-08-26 12:57:19 // FIN: Archivos Excel exportados con éxito. Etapa de Extracción completada.
+
+2026-08-26 12:57:20 // INICIO: Arranca la fase de transformación de datos.
+2026-08-26 12:57:20 // INFO: Archivos Excel de extracción cargados correctamente.
+2026-08-26 12:57:20 // INFO: Dimensiones (Sucursales, Productos) y Cotizaciones procesadas.
+2026-08-26 12:57:20 // INFO: Construyendo tabla de hechos 'fact_monitoreo_precios'...
+2026-08-26 12:57:20 // INFO: Datos de supermercados y feria unidos con éxito en la tabla de hechos.
+2026-08-26 12:57:20 // INFO: Analizando brechas de precios para alertas...
+2026-08-26 12:57:20 // INFO: Ningún producto superó el umbral de alerta de brecha.
+2026-08-26 12:57:20 // INFO: Generando archivos Excel finales para la carga en Base de Datos...
+2026-08-26 12:57:20 // FIN: Transformación y exportación completadas exitosamente.
+
+2026-08-26 12:57:21 // INICIO: Arranca la fase de carga de datos en PostgreSQL.
+2026-08-26 12:57:21 // INFO: Archivos Excel finales listos para ser cargados en la BD.
+2026-08-26 12:57:21 // INFO: Conexión exitosa a la base de datos PostgreSQL.
+2026-08-26 12:57:21 // INFO: Dimensiones (sucursales, productos) actualizadas correctamente vía UPSERT.
+2026-08-26 12:57:21 // INFO: Tablas de hechos (cotizaciones, monitoreo) agregadas correctamente vía APPEND.
+2026-08-26 12:57:21 // FIN: Carga de datos exitosa. Pipeline ETL finalizado.
+
+2026-09-02 12:50:15 // INICIO: Comenzando proceso de extracción de datos (PDF, Divisas y Supermercados).
+2026-09-02 12:50:15 // PDF detectado: /opt/airflow/data/agro_justo_mendoza_archivos/Informeprecios-01-07-2026.pdf. Enviando a Gemini AI...
+2026-09-02 12:51:05 // EXITO: Extracción OCR de Gemini completada correctamente.
+2026-09-02 12:51:05 // EXITO: Cotización Dólar Blue obtenida ($1540).
+2026-09-02 12:51:05 // SCRAPING: Iniciando escaneo de precios en supermercados para 90 productos...
+2026-09-02 12:55:48 // SCRAPING: Búsqueda de precios en supermercados finalizada.
+2026-09-02 12:55:48 // FIN: Archivos Excel exportados con éxito. Etapa de Extracción completada.
+
+2026-09-02 12:55:49 // INICIO: Arranca la fase de transformación de datos.
+2026-09-02 12:55:49 // INFO: Archivos Excel de extracción cargados correctamente.
+2026-09-02 12:55:49 // INFO: Dimensiones (Sucursales, Productos) y Cotizaciones procesadas.
+2026-09-02 12:55:49 // INFO: Construyendo tabla de hechos 'fact_monitoreo_precios'...
+2026-09-02 12:55:49 // INFO: Datos de supermercados y feria unidos con éxito en la tabla de hechos.
+2026-09-02 12:55:49 // INFO: Analizando brechas de precios para alertas...
+2026-09-02 12:55:53 // ALERTA ENVIADA: Se detectaron 5 productos con brecha extrema.
+2026-09-02 12:55:53 // INFO: Generando archivos Excel finales para la carga en Base de Datos...
+2026-09-02 12:55:53 // FIN: Transformación y exportación completadas exitosamente.
+
+2026-09-02 12:55:54 // INICIO: Arranca la fase de carga de datos en PostgreSQL.
+2026-09-02 12:55:54 // INFO: Archivos Excel finales listos para ser cargados en la BD.
+2026-09-02 12:55:54 // INFO: Conexión exitosa a la base de datos PostgreSQL.
+2026-09-02 12:55:54 // INFO: Dimensiones (sucursales, productos) actualizadas correctamente vía UPSERT.
+2026-09-02 12:55:54 // INFO: Tablas de hechos (cotizaciones, monitoreo) agregadas correctamente vía APPEND.
+2026-09-02 12:55:54 // FIN: Carga de datos exitosa. Pipeline ETL finalizado.
+
+2026-09-09 14:12:23 // INICIO: Comenzando proceso de extracción de datos (PDF, Divisas y Supermercados).
+2026-09-09 14:12:27 // ADVERTENCIA: No se encontró PDF en /opt/airflow/data/agro_justo_mendoza_archivos. Se aplicó plantilla nula.
+2026-09-09 14:12:27 // EXITO: Cotización Dólar Blue obtenida ($1540).
+2026-09-09 14:12:27 // SCRAPING: Iniciando escaneo de precios en supermercados para 90 productos...
+2026-09-09 14:17:29 // SCRAPING: Búsqueda de precios en supermercados finalizada.
+2026-09-09 14:17:30 // FIN: Archivos Excel exportados con éxito. Etapa de Extracción completada.
+
+2026-09-09 14:17:32 // INICIO: Arranca la fase de transformación de datos.
+2026-09-09 14:17:32 // INFO: Archivos Excel de extracción cargados correctamente.
+2026-09-09 14:17:32 // INFO: Dimensiones (Sucursales, Productos) y Cotizaciones procesadas.
+2026-09-09 14:17:32 // INFO: Construyendo tabla de hechos 'fact_monitoreo_precios'...
+2026-09-09 14:17:32 // INFO: Datos de supermercados y feria unidos con éxito en la tabla de hechos.
+2026-09-09 14:17:32 // INFO: Analizando brechas de precios para alertas...
+2026-09-09 14:17:32 // INFO: Ningún producto superó el umbral de alerta de brecha.
+2026-09-09 14:17:32 // INFO: Generando archivos Excel finales para la carga en Base de Datos...
+2026-09-09 14:17:32 // FIN: Transformación y exportación completadas exitosamente.
+
+2026-09-09 14:17:33 // INICIO: Arranca la fase de carga de datos en PostgreSQL.
+2026-09-09 14:17:34 // INFO: Archivos Excel finales listos para ser cargados en la BD.
+2026-09-09 14:17:34 // INFO: Conexión exitosa a la base de datos PostgreSQL.
+2026-09-09 14:17:41 // INFO: Dimensiones (sucursales, productos) actualizadas correctamente vía UPSERT.
+2026-09-09 14:17:42 // INFO: Tablas de hechos (cotizaciones, monitoreo) agregadas correctamente vía APPEND.
+2026-09-09 14:17:42 // FIN: Carga de datos exitosa. Pipeline ETL finalizado.
+
