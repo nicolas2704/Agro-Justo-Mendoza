@@ -84,8 +84,6 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" title="Power BI"/>
 <img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" width="40" title="Excel"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="40" title="Telegram"/>
-<img src="https://icon.icepanel.io/Technology/svg/Make.svg" width="40" title="Make"/>
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" width="40" title="Google Gemini"/>
 </p>
 
 *   **Lenguajes & Procesamiento:** Python, Pandas.
