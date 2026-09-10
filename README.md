@@ -9,7 +9,10 @@
 ![Make](https://img.shields.io/badge/Automation-Make-purple)
 ![Excel](https://img.shields.io/badge/Spreadsheet-Excel-brightgreen)
 ![PowerBI](https://img.shields.io/badge/Dashboard-PowerBI-yellow)
+
 ---
+
+![Presentación Agro Justo Mendoza](https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/imagen_presentacion.png?raw=true)
 
 # 📊 Monitoreo económico y análisis estratégico de precios
 
@@ -81,6 +84,8 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" title="Power BI"/>
 <img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" width="40" title="Excel"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="40" title="Telegram"/>
+<img src="https://icon.icepanel.io/Technology/svg/Make.svg" width="40" title="Make"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" width="40" title="Google Gemini"/>
 </p>
 
 *   **Lenguajes & Procesamiento:** Python, Pandas.
@@ -141,8 +146,7 @@ Este sistema de inteligencia empodera a distintos actores del mercado:
 ## 👥 Integrantes
 
 - **Nicolás Hernán Montuelle**  
-  <a href="https://www.linkedin.com/in/tu-enlace-a-linkedin/" target="_blank">
+  <a href="https://www.linkedin.com/in/nicolasmontuelle06/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/>
   </a>
-
 
