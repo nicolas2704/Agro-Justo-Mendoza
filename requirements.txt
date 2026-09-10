@@ -1,0 +1,17 @@
+openpyxl
+pycoingecko
+pandas
+requests
+beautifulsoup4
+numpy
+apache-airflow-providers-postgres
+psycopg2-binary
+kaleido==0.2.1
+plotly==5.22.0
+pyspark
+pyarrow>=14.0.0
+apache-airflow-providers-apache-spark
+google-generativeai
+sqlalchemy
+pendulum
+apache-airflow-providers-smtp
