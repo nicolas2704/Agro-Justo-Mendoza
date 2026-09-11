@@ -147,5 +147,5 @@ Este sistema de inteligencia empodera a distintos actores del mercado:
 - **Nicolás Hernán Montuelle**  
   <a href="https://www.linkedin.com/in/nicolasmontuelle06/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/>
-  </
+  </a>
 
