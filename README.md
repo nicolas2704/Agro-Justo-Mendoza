@@ -48,6 +48,7 @@ Desarrollar un pipeline de datos *End-to-End* para monitorear, cuantificar y ale
 ---
 
 # 🏗️ Arquitectura y Flujo de Datos (ETL)
+![Arquitectura Agro Justo Mendoza]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/Diagrama_Agro_Justo-Mza.png?raw=true)
 
 Se construyó un contenedor de **Docker** para facilitar la arquitectura, permitiendo correr el orquestador **Apache Airflow** de forma aislada y automatizando el flujo de datos (DAGs) mediante scripts en **Python**.
 
@@ -104,9 +105,6 @@ Se diseñó un modelo en Estrella analítico relacional optimizado para consulta
 *   **Tablas de Hechos (2):** `monitoreo_precios`, `cotizaciones_divisas`.
 *   **Tablas de Dimensiones (3):** `calendario`, `sucursales`, `productos`.
 
-### 📷 Ver modelo de la base de datos
-![Modelo SQL](./ruta_a_tu_imagen_modelo_datos.png)
-
 ---
 
 # 📊 Dashboard de Business Intelligence
@@ -149,5 +147,5 @@ Este sistema de inteligencia empodera a distintos actores del mercado:
 - **Nicolás Hernán Montuelle**  
   <a href="https://www.linkedin.com/in/nicolasmontuelle06/" target="_blank">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="25"/>
-  </a>
+  </
 
