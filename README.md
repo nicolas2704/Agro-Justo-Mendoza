@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/c6dc6c20-4611-4667-8e30-4ff31a0bc3a7
+
 # 🍎🥦🥕 Data Engineering & BI para Mercado Frutihortícola 🍅🥔🧅 – Agro Justo Mendoza (Agro-Gap)
 
 ![Data Engineering](https://img.shields.io/badge/Data%20Engineering-Pipeline-blue)
