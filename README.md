@@ -123,7 +123,9 @@ La interfaz final de Power BI traduce millones de registros en métricas acciona
 - **Detección de Outliers:** Gráfico de dispersión para aislar el sobreprecio atípico.
 - **Catálogo y Auditoría Analítica:** Semáforo visual (verde = precio justo / rojo = alerta crítica).
 
-![Dashboard General](./ruta_a_tu_imagen_dashboard_1.png)
+📊 Navegá el análisis completo aquí:
+
+# 👉 **[Entrar al informe de Business Intelligence](https://app.powerbi.com/view?r=eyJrIjoiNzM4NTIwZDEtMWM0OC00NTA5LWJkOWMtODk2ZGE4NmJlZTk3IiwidCI6Ijc3MDI2YzQzLTFmNWMtNDEyYy1iNjg1LTJkNTM4Y2Q4NWIzMCIsImMiOjR9)**
 ![Análisis Detalle](./ruta_a_tu_imagen_dashboard_2.png)
 
 ---
