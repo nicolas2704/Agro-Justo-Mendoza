@@ -48,13 +48,11 @@ Desarrollar un pipeline de datos *End-to-End* para monitorear, cuantificar y ale
 ---
 
 # 🏗️ Arquitectura y Flujo de Datos (ETL)
-![Arquitectura Agro Justo Mendoza]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/Diagrama_Agro_Justo-Mza.png?raw=true)
 
 Se construyó un contenedor de **Docker** para facilitar la arquitectura, permitiendo correr el orquestador **Apache Airflow** de forma aislada y automatizando el flujo de datos (DAGs) mediante scripts en **Python**.
 
 > **Visualización de la Arquitectura:**
-> ![Arquitectura del Proyecto](./ruta_a_tu_imagen_arquitectura.png) 
-> *(Esquema topológico del pipeline de datos)*
+![Arquitectura Agro Justo Mendoza]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/Diagrama_Agro_Justo-Mza.png?raw=true)
 
 ### 1️⃣ Orquestación y Extracción (Ingesta Dual)
 El ciclo inicia mediante un DAG programado con ejecución semanal. Se extrae información de múltiples fuentes:
