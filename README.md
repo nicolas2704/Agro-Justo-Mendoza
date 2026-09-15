@@ -100,10 +100,11 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 ---
 # 🗄 Modelo de Datos
 
-Se diseñó un modelo en Estrella analítico relacional optimizado para consultas eficientes y consumo en herramientas de BI, estructurado en **5 tablas principales**:
+Se diseñó un modelo en Estrella analítico relacional optimizado para consultas eficientes y consumo en herramientas de BI, estructurado en **5 tablas principales y 1 de logs para control de alertas**:
 
 *   **Tablas de Hechos (2):** `monitoreo_precios`, `cotizaciones_divisas`.
 *   **Tablas de Dimensiones (3):** `calendario`, `sucursales`, `productos`.
+*   **Tabla de Registros(Logs) (1):** `log_reportes_enviados`.
 
 ---
 
