@@ -72,6 +72,7 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 *   **Alertas Técnicas:** Correos por ejecución Exitosa o Errónea.
 *   **Alertas de Negocio:** Notificación de brechas especulativas (≥300%).
 *   **Reportes PDF Automatizados:** Consulta del *Top 5 de sobreprecios* y reporte de *Inflación Minorista* distribuidos vía Telegram y Gmail.
+  ![Top 5 sobreprecios semanales]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/make_top_5_productos_semanal.png?raw=true)
 
 ---
 
