@@ -120,14 +120,19 @@ La interfaz final de Power BI traduce millones de registros en métricas acciona
 
 ### 📈 Análisis Gráfico
 - **Ranking de Especulación:** Matriz de barras evaluando la agresividad de precios por cadena.
+  ![Ranking Especulacion]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/ranking_especulacion.png?raw=true)
 - **Evolución Histórica y por Producto:** Gráficos de líneas bivariados para detectar inflación vs. oportunismo comercial.
+  ![Evolucion Historica]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/evolucion%20historica.png?raw=true)
+  ![Evolucion Historica por Producto]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/evolucion%20historica%20por%20producto.png?raw=true)
 - **Detección de Outliers:** Gráfico de dispersión para aislar el sobreprecio atípico.
+  ![Outliers]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/deteccion%20de%20Outliers.png?raw=true)
 - **Catálogo y Auditoría Analítica:** Semáforo visual (verde = precio justo / rojo = alerta crítica).
+  ![Catalogo]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/catalogo%20y%20auditoria%20analitica.png?raw=true)
 
 📊 Navegá el análisis completo aquí:
 
 # 👉 **[Entrar al informe de Business Intelligence](https://app.powerbi.com/view?r=eyJrIjoiNzM4NTIwZDEtMWM0OC00NTA5LWJkOWMtODk2ZGE4NmJlZTk3IiwidCI6Ijc3MDI2YzQzLTFmNWMtNDEyYy1iNjg1LTJkNTM4Y2Q4NWIzMCIsImMiOjR9)**
-![Análisis Detalle](./ruta_a_tu_imagen_dashboard_2.png)
+![Dashboard General]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/Dashboard%20General.png?raw=true)
 
 ---
 
