@@ -119,6 +119,7 @@ La interfaz final de Power BI traduce millones de registros en métricas acciona
 - **Supermercado Especulador:** Cadena minorista con la política de precios más alta de la semana.
 
 ### 📈 Análisis Gráfico
+
 - **Ranking de Especulación:** Matriz de barras evaluando la agresividad de precios por cadena.
   ![Ranking Especulacion]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/ranking_especulacion.png?raw=true)
 - **Evolución Histórica y por Producto:** Gráficos de líneas bivariados para detectar inflación vs. oportunismo comercial.
