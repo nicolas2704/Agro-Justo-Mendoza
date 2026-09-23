@@ -74,6 +74,9 @@ El flujo mantiene auditoría estricta mediante logs en `.txt`. La arquitectura o
 *   **Reportes PDF Automatizados:** Consulta del *Top 5 de sobreprecios* y reporte de *Inflación Minorista* distribuidos vía Telegram y Gmail.
   ![Top 5 sobreprecios semanales]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/make_top_5_productos_semanal.png?raw=true)
   ![Producto con mayor sobreprecio minorista]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/make_alerta_inflacion_minorista.png?raw=true)
+  ![Reporte Agro Justo]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/Reporte%20PDF.png?raw=true)
+  ![Alerta Minorista]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/Alerta%20Minorista.png?raw=true)
+  ![Telegram]( https://github.com/nicolas2704/Agro-Justo-Mendoza/blob/main/imagenes/telegram_alertas.png?raw=true)
 
 ---
 
